@@ -41,4 +41,9 @@
         android:fragment="com.gzr.wolvesden.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_sleep_gesture_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
