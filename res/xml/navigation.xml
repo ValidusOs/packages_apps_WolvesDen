@@ -41,4 +41,11 @@
         android:fragment="com.gzr.wolvesden.fragments.VariousNavigation"
         android:title="@string/various_navigation_title" />-->
 
+         <!-- Edge gestures -->
+         <Preference
+            android:id="@+id/edge_gestures"
+            android:key="edge_gestures"
+            android:fragment="com.gzr.wolvesden.fragments.EdgeGesturesSettings"
+            android:title="@string/edge_gestures_title"/>
+
 </PreferenceScreen>
