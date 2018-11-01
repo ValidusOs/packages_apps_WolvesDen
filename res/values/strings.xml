@@ -426,5 +426,12 @@
     <string name="theming_settings_dashboard_icons_default_accent">Round accent</string>
     <string name="theming_settings_dashboard_icons_plain">Plain</string>
     <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
+
+    <!-- Accent picker -->
+    <color name="accent_picker_white_accent">@android:color/white</color>
+    <color name="accent_picker_dark_accent">@android:color/black</color>
+
+    <!-- QSStyles -->
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
     
 </resources>
