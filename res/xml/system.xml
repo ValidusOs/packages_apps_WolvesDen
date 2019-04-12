@@ -46,6 +46,12 @@
         android:fragment="com.gzr.wolvesden.fragments.LedSettings"
         android:title="@string/leds_title" />
 
+    <Preference
+        android:key="fingerprint_settings"
+        android:title="@string/fingerprint_settings_title"
+        android:icon="@drawable/ic_settings_fingerprint"
+        android:fragment="com.gzr.wolvesden.fragments.FingerprintSettings" />
+
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"

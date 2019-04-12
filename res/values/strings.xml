@@ -31,6 +31,7 @@
     <!-- Fingerprint authentication vibration -->
     <string name="lockscreen_security_category">Security</string>
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <string name="fprint_sucess_vib_summary_on">Vibrate on successful fingerprint authentication enabled</string>
     <string name="fprint_sucess_vib_summary_off">Vibrate on successful fingerprint authentication disabled</string>
 
@@ -434,4 +435,8 @@
     <!-- QSStyles -->
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
     
+    <!-- Fingerprint settings-->
+    <string name="fingerprint_settings_title">Fingerprint</string>
+    <string name="fingerprint_category_custom_icon">Custom icon</string>
+
 </resources>
