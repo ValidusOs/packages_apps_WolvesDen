@@ -90,6 +90,12 @@
         android:summary="@string/notification_guts_kill_app_button_summary"
         android:defaultValue="false" />
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="one_hand_mode_enabled"     
+        android:title="@string/one_hand_mode_enabled_title"             
+        android:summary="@string/one_hand_mode_enabled_summary"                   
+        android:defaultValue="false" />    
+
     <PreferenceCategory
         android:id="@+id/Wakelocks_category"
         android:key="Wakelocks_category"
