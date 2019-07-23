@@ -19,31 +19,31 @@
 
     <item
         android:id="@+id/system"
-        android:icon="@drawable/status_bar_clown_logo"
+        android:icon="@drawable/wolves_den_system"
         android:title="@string/system_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/style"
-        android:icon="@drawable/status_bar_gzr_circle_logo"
+        android:icon="@drawable/wolves_den_style"
         android:title="@string/style_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/lockscreen"
-        android:icon="@drawable/status_bar_gzr_skull_logo"
+        android:icon="@drawable/wolves_den_lock_screen"
         android:title="@string/lockscreen_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/statusbar"
-        android:icon="@drawable/status_bar_logo"
+        android:icon="@drawable/wolves_den_status_bar"
         android:title="@string/statusbar_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/navigation"
-        android:icon="@drawable/status_bar_oreo_wolf_logo"
+        android:icon="@drawable/wolves_den_navigation"
         android:title="@string/navigation_category"
         app:showAsAction="ifRoom|withText"/>
 
