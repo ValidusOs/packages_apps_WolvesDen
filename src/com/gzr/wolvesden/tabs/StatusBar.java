@@ -64,7 +64,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        return true;
+        return false;
     }
 
 }

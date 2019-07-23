@@ -19,9 +19,9 @@
     <!-- Tabs -->
     <string name="system_category">System</string>
     <string name="style_category">Style</string>
-    <string name="lockscreen_category">Lock screen</string>
+    <string name="lockscreen_category">LockScreen</string>
     <string name="heads_up_category">Heads up</string>
-    <string name="statusbar_category">Status bar</string>
+    <string name="statusbar_category">StatusBar</string>
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="statusbar_notifications_category">Status bar notifications</string>
