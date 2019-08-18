@@ -44,8 +44,7 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-
-import com.android.internal.util.du.Utils;
+import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,9 +80,9 @@ public class CarrierLabel extends SettingsPreferenceFragment
                 getResources().getString(R.string.show_carrier_keyguard) };
         CharSequence[] NonNotchValues = {"0", "1" , "2", "3"};
         CharSequence[] NotchValues = {"0", "1"};
-        mShowCarrierLabel.setEntries(Utils.hasNotch(getActivity()) ? NotchEntries : NonNotchEntries);
+        //mShowCarrierLabel.setEntries(Utils.hasNotch(getActivity()) ? NotchEntries : NonNotchEntries);
         mShowCarrierLabel.setDefaultValue("1");
-        mShowCarrierLabel.setEntryValues(Utils.hasNotch(getActivity()) ? NotchValues : NonNotchValues);
+        //mShowCarrierLabel.setEntryValues(Utils.hasNotch(getActivity()) ? NotchValues : NonNotchValues);
         mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
