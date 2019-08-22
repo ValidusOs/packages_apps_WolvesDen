@@ -18,6 +18,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Preference
+        android:key="audio_panel"
+        android:fragment="com.gzr.wolvesden.fragments.AudioPanelSettings"
+        android:title="@string/audio_panel_view" />
+
+    <Preference
         android:key="app_ops"
         android:title="@string/app_ops_settings"
         android:summary="@string/app_ops_settings_summary">
@@ -26,10 +31,42 @@
         android:targetClass="com.android.settings.applications.appops.AppOpsSummary" />
     </Preference>
 
-    <PreferenceScreen
-        android:key="suspend_actions"
-        android:title="@string/screen_state_toggles_title"
-        android:fragment="com.gzr.wolvesden.fragments.SuspendActions" />
+    <Preference
+        android:key="fingerprint_settings"
+        android:title="@string/fingerprint_settings_title"
+        android:fragment="com.gzr.wolvesden.fragments.FingerprintSettings" />
+
+    <Preference
+        android:key="fingerprint_settings"
+        android:title="@string/fingerprint_settings_title"
+        android:fragment="com.gzr.wolvesden.fragments.FingerprintSettings" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary"
+        android:defaultValue="false" />
+
+
+    <com.gzr.wolvesden.preference.SystemSettingListPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:dialogTitle="@string/headset_connect_player_title"
+        android:entries="@array/headset_connect_player_entries"
+        android:entryValues="@array/headset_connect_player_values"
+        android:defaultValue="0"
+        android:summary="%s" />  
+
+    <Preference
+        android:key="leds"
+        android:fragment="com.gzr.wolvesden.fragments.LedSettings"
+        android:title="@string/leds_title" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="0" />
 
     <Preference
         android:key="powermenu"
@@ -41,84 +78,7 @@
         android:fragment="com.gzr.wolvesden.fragments.ScreenOffAnimations"
         android:title="@string/screen_off_category_title" />
 
-    <Preference
-        android:key="leds"
-        android:fragment="com.gzr.wolvesden.fragments.LedSettings"
-        android:title="@string/leds_title" />
-
-    <Preference
-        android:key="fingerprint_settings"
-        android:title="@string/fingerprint_settings_title"
-        android:icon="@drawable/ic_settings_fingerprint"
-        android:fragment="com.gzr.wolvesden.fragments.FingerprintSettings" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="less_boring_heads_up"
-        android:title="@string/less_boring_heads_up_title"
-        android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="0" />
-
-    <Preference
-        android:key="audio_panel"
-        android:fragment="com.gzr.wolvesden.fragments.AudioPanelSettings"
-        android:title="@string/audio_panel_view" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="toast_icon"
-        android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
-        android:defaultValue="true" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:title="@string/three_finger_gesture"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />    
-
-    <Preference
-        android:key="stock_tuner"
-        android:enabled="true"
-        android:title="@string/systemui_tuner_title"
-        android:summary="@string/systemui_tuner_summary">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.TunerActivity" />
-    </Preference>
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="notification_sound_vib_screen_on"
-        android:title="@string/notification_sound_vib_screen_on_title"
-        android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="force_expanded_notifications"
-        android:title="@string/force_expanded_notifications_title"
-        android:summary="@string/force_expanded_notifications_summary"
-        android:defaultValue="false" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="notification_guts_kill_app_button"
-        android:title="@string/notification_guts_kill_app_button_title"
-        android:summary="@string/notification_guts_kill_app_button_summary"
-        android:defaultValue="false" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="one_hand_mode_enabled"     
-        android:title="@string/one_hand_mode_enabled_title"             
-        android:summary="@string/one_hand_mode_enabled_summary"                   
-        android:defaultValue="false" />
-
-    <com.gzr.wolvesden.preference.SystemSettingListPreference
-        android:key="headset_connect_player"
-        android:title="@string/headset_connect_player_title"
-        android:dialogTitle="@string/headset_connect_player_title"
-        android:entries="@array/headset_connect_player_entries"
-        android:entryValues="@array/headset_connect_player_values"
-        android:defaultValue="0"
-        android:summary="%s" />  
-
-    <!-- Smart Pixels -->
+   <!-- Smart Pixels -->
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="smart_pixels_enable"
         android:title="@string/smart_pixels_title"
@@ -151,6 +111,51 @@
         android:title="@string/smart_pixels_shift_title"
         android:summary="@string/smart_pixels_shift_summary"
         android:dialogTitle="@string/smart_pixels_shift_title" />
+
+    <PreferenceScreen
+        android:key="suspend_actions"
+        android:title="@string/screen_state_toggles_title"
+        android:fragment="com.gzr.wolvesden.fragments.SuspendActions" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary"
+        android:defaultValue="true" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false" />    
+
+    <Preference
+        android:key="stock_tuner"
+        android:enabled="true"
+        android:title="@string/systemui_tuner_title"
+        android:summary="@string/systemui_tuner_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </Preference>
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary"
+        android:defaultValue="false" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="one_hand_mode_enabled"     
+        android:title="@string/one_hand_mode_enabled_title"             
+        android:summary="@string/one_hand_mode_enabled_summary"                   
+        android:defaultValue="false" />
 
     <PreferenceCategory
         android:id="@+id/Wakelocks_category"
