@@ -50,6 +50,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
+import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -61,6 +63,7 @@ public class ButtonSettings extends DashboardFragment {
     // Switches
     private static final String KEY_BUTTON_BRIGHTNESS      = "button_brightness";
     private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
+    private static final String KEY_SWAP_NAVIGATION_KEYS   = "swap_navigation_keys";
 
     // Long Press/Double Tap Actions
     private static final String KEY_HOME_LONG_PRESS        = "home_key_long_press";
@@ -94,6 +97,8 @@ public class ButtonSettings extends DashboardFragment {
     
     private int mDeviceHardwareKeys;
 
+    private SystemSettingSwitchPreference mSwapHardwareKeys;
+
     @Override
     public int getMetricsCategory() {
         return -1;
@@ -118,6 +123,8 @@ public class ButtonSettings extends DashboardFragment {
 
         final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+
+        mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
 
         mDeviceHardwareKeys = res.getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);

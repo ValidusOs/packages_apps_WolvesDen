@@ -439,4 +439,8 @@
     <string name="fingerprint_settings_title">Fingerprint</string>
     <string name="fingerprint_category_custom_icon">Custom icon</string>
 
+    <!-- Swap hw keys -->
+    <string name="swap_navigation_keys_title">Swap hardware buttons</string>
+    <string name="swap_navigation_keys_title_summary">Swap the order of recents and back buttons</string>
+
 </resources>
