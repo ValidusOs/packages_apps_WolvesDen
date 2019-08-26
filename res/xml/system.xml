@@ -42,6 +42,11 @@
         android:summary="@string/force_expanded_notifications_summary"
         android:defaultValue="false" />
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary"
+        android:defaultValue="false" />
 
     <com.gzr.wolvesden.preference.SystemSettingListPreference
         android:key="headset_connect_player"
@@ -113,12 +118,6 @@
         android:fragment="com.gzr.wolvesden.fragments.SuspendActions" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="toast_icon"
-        android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
-        android:defaultValue="true" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
@@ -141,10 +140,10 @@
         android:defaultValue="true" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-        android:key="notification_guts_kill_app_button"
-        android:title="@string/notification_guts_kill_app_button_title"
-        android:summary="@string/notification_guts_kill_app_button_summary"
-        android:defaultValue="false" />
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary"
+        android:defaultValue="true" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="one_hand_mode_enabled"     
