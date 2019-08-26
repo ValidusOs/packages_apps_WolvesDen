@@ -39,13 +39,11 @@
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
-        android:summary="@string/force_expanded_notifications_summary"
         android:defaultValue="false" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="notification_guts_kill_app_button"
         android:title="@string/notification_guts_kill_app_button_title"
-        android:summary="@string/notification_guts_kill_app_button_summary"
         android:defaultValue="false" />
 
     <com.gzr.wolvesden.preference.SystemSettingListPreference
@@ -82,7 +80,6 @@
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="smart_pixels_enable"
         android:title="@string/smart_pixels_title"
-        android:summary="@string/smart_pixels_summary"
         android:defaultValue="false"
         android:fragment="com.gzr.wolvesden.fragments.SmartPixels" />
 
@@ -90,7 +87,6 @@
         android:key="smart_pixels_on_power_save"
         android:dependency="smart_pixels_enable"
         android:title="@string/smart_pixels_on_power_save_title"
-        android:summary="@string/smart_pixels_on_power_save_summary"
         android:defaultValue="false" />
 
     <com.gzr.wolvesden.preference.SystemSettingListPreference
@@ -109,7 +105,6 @@
         android:defaultValue="5"
         android:dependency="smart_pixels_enable"
         android:title="@string/smart_pixels_shift_title"
-        android:summary="@string/smart_pixels_shift_summary"
         android:dialogTitle="@string/smart_pixels_shift_title" />
 
     <PreferenceScreen
@@ -120,7 +115,6 @@
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
-        android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />    
 
     <Preference
@@ -136,19 +130,16 @@
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:title="@string/notification_sound_vib_screen_on_title"
-        android:summary="@string/notification_sound_vib_screen_on_summary"
         android:defaultValue="true" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
         android:defaultValue="true" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="one_hand_mode_enabled"     
         android:title="@string/one_hand_mode_enabled_title"             
-        android:summary="@string/one_hand_mode_enabled_summary"                   
         android:defaultValue="false" />
 
     <PreferenceCategory
